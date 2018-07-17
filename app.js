@@ -12,7 +12,8 @@ app.get( '/', function(rqst, resp) {
         //console.log('xxxxx=>', users );
         resp.render("home",{data:users})
     }).catch(err => {
-        throw err
+        resp.render("error",{data:err})
+        //throw err
     })
 });
 
@@ -38,7 +39,10 @@ app.post("/register", function(req, res){
       .then(newUser => {
         //console.log("new user--->",newUser);
         res.redirect("/");
-      });
+      })
+      .catch(err => {
+            res.render("error",{data:err})
+      })
 });
 
 app.listen(9090, function () {
