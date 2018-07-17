@@ -8,13 +8,15 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get( '/', function(rqst, resp) {
-    models.User.findAll({order: [['created_At', 'DESC']]}).then(users => {
-        //console.log('xxxxx=>', users );
-        resp.render("home",{data:users})
-    }).catch(err => {
-        resp.render("error",{data:err})
-        //throw err
-    })
+         resp.render("home",{data:"HELLO WORLD"})
+
+    // models.User.findAll({order: [['created_At', 'DESC']]}).then(users => {
+    //     //console.log('xxxxx=>', users );
+    //     resp.render("home",{data:users})
+    // }).catch(err => {
+    //     resp.render("error",{data:err})
+    //     //throw err
+    // })
 });
 
 /* app.get("/register", function(req, res){
