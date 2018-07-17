@@ -1,19 +1,14 @@
 <h1>
-    Hello <%=data.username%>!!
-    <p>Current version is <%=data.version%></p>
-</h1>
-
-<div>
-    <!-- <p class="lead">
-        We have <strong><%=data.length%></strong> users.. 
-    </p>
+        Hello!!
+        <p>User details table</p>
+    </h1>
     
-    <form method="POST" action='/register'>
-        <input type="text" class="form" name="email" placeholder="Enter Your Email">
-        <button>Join Now</button>
-    </form>
-
-    <table>
+    <div>
+        <form method="POST" action='/register'>
+            <input type="text" class="form" name="email" placeholder="Enter Your Email">
+            <button>Submit</button>
+        </form>
+        <table>
             <tr>
                 <th>Email</th><th>Time</th>
             </tr>
@@ -23,6 +18,5 @@
                     <td><%= data[i].created_at %></td>
                 </tr>    
             <% } %>
-    </table> -->
-         
-</div>
+        </table> 
+    </div>         
