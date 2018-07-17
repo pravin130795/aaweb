@@ -47,6 +47,6 @@ app.post("/register", function(req, res){
       })
 });
 
-app.listen(9090, function () {
-    console.log('App listening on port 9090!');
+app.listen(8080, function () {
+    console.log('App listening on port 8080!');
 });
