@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get( '/', function(rqst, resp) {
-    models.User.findAll({order: [['created_at', 'DESC']]}).then(users => {
+    models.User.findAll({order: [['created_At', 'DESC']]}).then(users => {
         //console.log('xxxxx=>', users );
         resp.render("home",{data:users})
     }).catch(err => {

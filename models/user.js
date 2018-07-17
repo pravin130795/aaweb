@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
         email: {
             type: DataTypes.STRING
         },
-        created_at:{
+        created_At:{
             type:DataTypes.DATE
         }
     },{
