@@ -1,0 +1,44 @@
+<h1>
+    Redis Databsse
+</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+<div>
+    <form method="POST" action='/register'>
+        <p>Enter Email to add user</p>
+        <input type="text" class="form" name="email" placeholder="Enter Your Email">
+        <button>Submit</button>
+    </form>
+    <table>
+        <tr>
+            <th>UserId</th>
+            <th>Email</th>
+            <th>Time</th>
+
+        </tr>
+        <% for (var i = 0; i < data.length; i++) { %>
+            <tr>
+                <td>
+                    <%= data[i].userId %>
+                </td>
+                <td>
+                    <%= data[i].data.email %>
+                </td>
+                <td>
+                    <%= data[i].data.time %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+    <br>
+    <form method="POST" action='/deleteUser'>
+        <p>Enter UserId to delete user</p>
+        <input type="text" class="form" name="userId" placeholder="Enter Your UserId">
+        <button>Submit</button>
+    </form>
+</div>

@@ -9,12 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.6.1",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "faker": "^4.1.0",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
+    "redis": "^2.8.0",
     "sequelize": "^4.38.0",
     "tedious": "^2.6.3"
   }
