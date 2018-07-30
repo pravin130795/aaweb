@@ -1,10 +1,10 @@
-var util = require('util');
-var Validator = require('jsonschema').Validator;
-var logger = require('../utils/logger');
-var constants = require('../utils/constants');
-var _validator = new Validator();
+const util = require('util');
+const Validator = require('jsonschema').Validator;
+const logger = require('../utils/logger');
+const constants = require('../utils/constants');
+const _validator = new Validator();
 
-var schemas = function () {
+let schemas = function () {
 };
 
 schemas.customerDetails = {
@@ -57,7 +57,7 @@ schemas.designationDetail = {
 }
 
 schemas.validate = function (object, schema) {
-    var errors = _validator.validate(object, schema).errors;
+    let errors = _validator.validate(object, schema).errors;
     if (errors.length > 0) {
         logger.error(util.format('Schema validation failed for id:- %s errors:- %j', schema.id, errors));
     }

@@ -1,11 +1,11 @@
-var convict = require('convict');
-var fs = require('fs');
+const convict = require('convict');
+const fs = require('fs');
 
-var config = convict({
+let config = convict({
 	env: {
 		doc: 'The applicaton environment.',
 		format: ['production', 'development', 'local'],
-		default: 'local',
+		default: 'production',
 		env: 'NODE_ENV',
 		arg: 'env'
 	},
@@ -20,7 +20,7 @@ var config = convict({
 		port: {
 			doc: 'HTTP port to bind',
 			format: 'port',
-			default: 3000,
+			default: 3003,
 			env: 'PORT'
 		},
 		enableHttpLogging: {

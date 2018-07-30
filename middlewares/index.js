@@ -1,11 +1,11 @@
-var bodyParser = require('body-parser');
-var compression = require('compression');
-var cookieParser = require('cookie-parser');
-var helmet = require('helmet');
-var config = require('../configurations/config');
-var logger = require('../utils/logger');
-var util = require('util');
-var constants = require('../utils/constants');
+const bodyParser = require('body-parser');
+const compression = require('compression');
+const cookieParser = require('cookie-parser');
+const helmet = require('helmet');
+const config = require('../configurations/config');
+const logger = require('../utils/logger');
+const util = require('util');
+const constants = require('../utils/constants');
 
 module.exports = function(app) {
 

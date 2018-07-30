@@ -1,4 +1,4 @@
-﻿var config = require('../configurations/config');
+﻿const config = require('../configurations/config');
 exports = module.exports = function(app) {
 	app.use(function(req, res, next) {
 		// / if

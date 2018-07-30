@@ -1,4 +1,4 @@
-var constants = {
+let constants = {
 	messageKeys: {
 		code_4001: 'Incomplete/Incorrect Request Data.',
 		code_5000: 'Unsuccessful Operation',
