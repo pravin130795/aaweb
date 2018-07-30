@@ -1,23 +1,31 @@
 {
-  "name": "firstexpressprjct",
-  "version": "1.0.0",
-  "description": "Test",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "async": "^2.6.1",
-    "body-parser": "^1.18.3",
-    "ejs": "^2.6.1",
-    "express": "^4.16.3",
-    "faker": "^4.1.0",
-    "mysql": "^2.15.0",
-    "mysql2": "^1.5.3",
-    "redis": "^2.8.0",
-    "sequelize": "^4.38.0",
-    "tedious": "^2.6.3"
-  }
+	"name": "api",
+	"version": "0.1.0",
+	"description": "Alghanim API",
+	"main": "server.js",
+	"author": {
+		"name": "parth.raval",
+		"email": ""
+	},
+	"dependencies": {
+		"body-parser": "^1.15.2",
+		"compression": "^1.6.2",
+		"convict": "^1.4.0",
+		"cookie-parser": "^1.4.3",
+		"csurf": "^1.9.0",
+		"elasticsearch": "^8.2.0",
+		"express": "^4.14.0",
+		"helmet": "^2.2.0",
+		"jsdoc": "^3.5.5",
+		"jsonschema": "^1.0.2",
+		"lodash": "^4.16.2",
+		"moment": "^2.18.1",
+		"morgan": "^1.7.0",
+		"node-uuid": "^1.4.7",
+		"passport": "^0.4.0",
+		"sequelize": "^4.38.0",
+		"sequelize-transforms": "^2.0.0",
+		"tedious": "^2.6.3",
+		"winston": "^2.2.0"
+	}
 }

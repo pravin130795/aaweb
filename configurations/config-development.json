@@ -1,0 +1,42 @@
+﻿{
+	"cluster": {
+		"workerCount": 5
+	},
+	"logger": {
+		"path": "./logs/"
+	},
+	"server": {
+		"CORS": {
+			"allowedHosts": [
+				"http://localhost:3000"
+			]
+		},
+		"security": {
+			"emailSalt": "$2a$10$e.oPc.qgbyUcDAhZjK2Mhf"
+		},
+		"session": {
+			"cookieSecret": "ALGHANIMAPI"
+		},
+		"bodyParser": {
+			"limit": "20000kb"
+		}
+	},
+	"sql": {
+		"host": "",
+		"port": "",
+		"username": "",
+		"password": "",
+		"database": "",
+		"dialect": "",
+		"define": {
+			"underscored": true,
+			"freezeTableName": true,
+			"charset": "",
+			"collate": ""
+		},
+		"dialectOptions": {
+			"multipleStatements": true
+		},
+		"logging": true
+	}
+}
