@@ -5,7 +5,7 @@ let config = convict({
 	env: {
 		doc: 'The applicaton environment.',
 		format: ['production', 'development', 'local'],
-		default: 'production',
+		default: 'local',
 		env: 'NODE_ENV',
 		arg: 'env'
 	},
@@ -36,7 +36,7 @@ let config = convict({
 		enableStatic: {
 			doc: 'Enable Express static server',
 			format: Boolean,
-			default: false
+			default: true
 		},
 		enablePassportAuthentication: {
 			doc: 'Enable Passport authentication',
@@ -47,6 +47,11 @@ let config = convict({
 			doc: 'Enable Redis session storage',
 			format: Boolean,
 			default: false
+		},
+		staticDirectory: {
+			doc: 'Path To Static Directory',
+			format: String,
+			default: 'static'
 		},
 		enableCSRFSecurity: {
 			doc: 'Enable CSRF security',
