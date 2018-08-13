@@ -1,6 +1,6 @@
 ﻿module.exports = function (app) {
 	var _ = require('lodash');
-	var logger = require('../utils/logger');
+	//var logger = require('../utils/logger');
 	var util = require('util');
 	
 	app.use(function (req, res, next) {

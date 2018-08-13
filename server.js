@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const util = require('util');
 const config = require('./configurations/config');
-const logger = require('./utils/logger');
+//const logger = require('./utils/logger');
 const middlewares = require('./middlewares/index');
 let app = express();
 
@@ -21,6 +21,7 @@ app.use('/', express.static(path.join(__dirname + '/public')));
 
 // start http server
 let server = http.createServer(app).listen(app.get('port'), function () {
+	console.log('ALGHANIM Web App with pid: %s listening on port: %s', process.pid, app.get('port'))
 	//logger.info(util.format('ALGHANIM Web App with pid: %s listening on port: %s', process.pid, app.get('port')));
 	//logger.info(util.format('Environment: %s', config.get('env')));
 });
