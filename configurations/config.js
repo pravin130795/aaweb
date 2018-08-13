@@ -13,7 +13,7 @@ let config = convict({
 		port: {
 			doc: 'HTTP port to bind',
 			format: 'port',
-			default: 8081,
+			default: 8080,
 			env: 'PORT'
 		},
 		enableStatic: {
