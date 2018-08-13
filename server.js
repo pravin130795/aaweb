@@ -9,7 +9,7 @@ const middlewares = require('./middlewares/index');
 let app = express();
 
 // set port.
-app.set('port', config.get('server.port'));
+app.set('port',process.env.PORT || config.get('server.port'));
 
 // required to get client IP when running via reverse proxy (HA proxy)
 app.set('trust proxy', true);
